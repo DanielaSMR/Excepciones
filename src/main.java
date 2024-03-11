@@ -45,4 +45,5 @@ public class main {
     }
 
     //Checked se utiliza en excepciones que no son debiado a un error propio del programa
+    //Unckeck se utiliza por ejemplo en dividir 0/0
 }
