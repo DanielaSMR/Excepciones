@@ -1,14 +1,14 @@
 import java.util.Scanner;
 import javax.management.RuntimeErrorException;
 
-public class año {
+public class year {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Escribe tu año de nacimiento");
-        int año = sc.nextInt();
-        calcularEdad(año);
+        System.out.println("Escribe tu year de nacimiento");
+        int year = sc.nextInt();
+        calcularEdad(year);
         try{
-            calcularAño(año);
+            calcularyear(year);
         }catch(Exception ex){
             System.out.println("Tu edad es invalida");
             return;
@@ -16,8 +16,8 @@ public class año {
     }
 
     //Unchecked
-    public static int calcularEdad(int año){
-        int edad = 2024 - año;
+    public static int calcularEdad(int year){
+        int edad = 2024 - year;
         if(edad <= 0){
             throw new RuntimeException("ErrorEsNegativo");
         }
@@ -26,8 +26,8 @@ public class año {
     }
 
     //Checked
-    public static int calcularAño(int año) throws Exception{
-        int edad = 2024 - año;
+    public static int calcularyear(int year) throws Exception{
+        int edad = 2024 - year;
         if(edad <= 0){
             throw new RuntimeException("El numero es negativo");
         }
